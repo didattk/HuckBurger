@@ -1,0 +1,53 @@
+<html lang="pt-br">
+<head><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Huck Burger</title>
+</head>
+<body>
+    <div class="container">
+    <h3>Dados do cliente </h3>
+    <form action="gravar.php" method="post">
+         Nome :<br>
+         <input type="text" name="nome" class="form-control" style="width: 725px" required>  
+         Telefone:<br>
+          <input type="telefone" name="telefone" class="form-control" style="width: 725px" required>  
+           
+           
+           <h3>Monte seu lanche </h3> 
+           
+                      
+         Ponta da carne <br><input type="radio" name="ponta" value="malpassada" required> Mal passada
+               <input type="radio" name="ponta" checked value="aoponto" required> Ao Ponto
+        <br>      <br>
+           
+       Pão <br>
+        <select class="form-control" name= "pao" style="width: 725px" required>
+            <option disabled selected>-selecione- </option>
+            <option value="brioche"> Brioche</option>
+             <option value="Australiano"> Australiano</option>
+              <option value="integral">Integral</option>
+               <option value=" Alhoeoregano"> Alho e oregano</option>
+                  <option value="Italianocomervas"> Italiano com ervas</option>
+        </select>   
+                  <br>  Queijo <br>
+        <select class="form-control" name= "pao" style="width: 725px" required>
+            <option disabled selected>-selecione- </option>
+            <option value=" cheddar"> Cheddar</option>
+             <option value="prato"> Prato</option>
+              <option value="suico">Suiço</option>
+               <option value="mucarela"> Muçarela</option>
+                  <option value="semqueijo"> Sem queijo</option>
+                    
+        </select>
+        <br> <br>
+        
+        Observaçoes:<br>
+        <textarea "cols='100' rows='10'"></textarea>
+         <br><br>
+      <input type="submit" class="btn btn-success" value = "Cadastrar">
+       
+    </form>           
+        
+    </div>
+</body>
+</html>
